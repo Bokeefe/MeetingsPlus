@@ -9,6 +9,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway';
+}
+p, div {
+    font-family: 'Raleway';
+}
 
 span.bold{
 	font-weight: 900;
@@ -31,9 +37,7 @@ body > div:nth-child(2) > div.left > p {
 	background-color: #cccccc;
 	padding: 10px;
 }
-.item{
-	padding: 10px;
-}
+
 .item:hover {
 	background-color: #cccccc;
 	cursor: default;
@@ -78,11 +82,8 @@ body > div:nth-child(2) > div.left > p {
 	overflow:hidden;
 }
 .container-head {
-	width: 80%;
 	margin-left: auto ;
   	margin-right: auto ;
-	background: rgba(255,255,255, 0.8);
-	border-radius:25px 25px 0 0;
 }
 .container-head > img {
     display:block;

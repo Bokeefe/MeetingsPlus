@@ -7,15 +7,18 @@
   src="http://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 	<div class='container' style='border-radius:25px 25px 0 0;'>
-		<img src="mpe_logo.png">
+		<div class='container-head' >
+			<img src="mpe_logo.png">
+		</div>
 		<div class='menu'>
 			<div class='center'>
 				<span class='active' id='home'>HOME</span>
@@ -87,10 +90,13 @@
 		$('#attendee').click(function(){
 			window.location ="attendee.html";
 		});
+		$('#admin').click(function(){
+			window.location ="attendee.html";
+		});
 		var sheetKey = "AIzaSyAv3daCKFAHnRUmkUeymZW42RyBOVzfmyo";
 	</script>
 </body>
 <footer style='border-radius: 0 0 25px 25px;' class='container'>
-	<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338</p>
+	<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338<span class='item' style='color: grey' id='admin'>ADMIN</span></p>
 </footer>
 </html>
