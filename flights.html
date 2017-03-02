@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Meetings Plus Events</title>
+	<script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="657483998142-c25qf51fp8d9aqcl9oipni9cbhqr3fmc.apps.googleusercontent.com.apps.googleusercontent.com">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+	<div class='container-head'>
+		<img src="mpe_logo.png">
+			<div class='menu'>
+				<div class="center">
+				<span class='item' id='home'>HOME</span>
+				<span class='active' id='flights'>Flights</span>
+				<span class='item' id='hotel'>Hotel</span>
+				<span class='item' id='activities'>Activities/Excursions</span>
+				<span class='item' id='itinerary'>Itinerary</span>
+			</div>
+		</div>
+	</div>
+	<div style='margin-top: -21px; margin-bottom: -16px;' class='container'>
+		<h1 style='padding:30px 0 0 30px;'> Jet Blue Airlines</h1><br>
+
+<p style='padding: 0 0 30px 30px;'>Depart Boston on Tuesday, April 4, 2017 on Flight 171 at 11:50 am and arriving non-stop into Cancun at 3:29 pm.
+<br><br><br><br>
+Depart Cancun on Saturday, April 8, 2017 on flight 172at 4:25 pm and arriving non-stop into Boston at 9:29 pm.
+<br><br><br><br>
+Cancun is on the EST zone so no need to reset your watches! </p>
+
+	
+	</div>
+	<script type="text/javascript">
+
+
+
+		$('#home').click(function(){
+			window.location ="index.html";
+		});
+		$('#flights').click(function(){
+			window.location ="flights.html";
+		});
+		$('#hotel').click(function(){
+			window.location ="hotel.html";
+		});
+		$('#activities').click(function(){
+			window.location ="excursions.html";
+		});
+		$('#itinerary').click(function(){
+			window.location ="itinerary.html";
+		});
+
+	</script>
+</body>
+<footer>
+	<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338</p>
+</footer>
+</html>

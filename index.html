@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Meetings Plus Events</title>
+	<script
+  src="http://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class='container-head'>
+		<img src="mpe_logo.png">
+		<div class='menu'>
+			<div class='center'>
+				<span class='active' id='home'>HOME</span>
+				<span class='item' id='flights'>Flights</span>
+				<span class='item' id='hotel'>Hotel</span>
+				<span class='item' id='activities'>Activities/Excursions</span>
+				<span class='item' id='itinerary'>Itinerary</span>
+			</div>
+		</div>
+	</div>
+
+
+	<div class='container'>
+		<div class='left'>
+			<p>Image Tech - A Xerox Company<br>
+			2017 PRESIDENT’S CLUB MEETING</p>
+		</div>
+		<div class='right'>
+			<img style='height:125px; margin:30px;' id='logo' src='imagetech.png'>
+		</div>
+	</div>
+	<div class='container'>
+		<div class='left'>
+			<img style= 'height:90px; margin-left: 40%;' src="winners.jpg">
+			<p>
+			Congratulations on being a 2017 Winner to the ITS President’s Club Event.  Now it is time to sit back and enjoy the benefits of all your hard work!<br><br>
+
+			Board a Jet Blue plane on Tuesday April 4 to experience a 4 night stay at the luxurious Grand Velas resort!  This is a true luxury all-inclusive resort and the Yucatan's most spectacular vacation destination among all the other Rivera Maya resorts. Relax on our pristine beach and play in the turquoise Caribbean Sea. Awaken your spirit with ancient healing rituals at our spa, a jungle sanctuary in harmony with nature. Savor the flavors of Mexico and the world at restaurants serving creative cuisine and chef-inspired food for the soul.<br><br>
+
+			Expect to unwind, relax and to be pampered with Oceanfront Resort rooms, private butler service for each room, lots of resort activities, fine dining, the best spa in Cancun, and all while being surrounded by beautiful tropical vegetation. The Grand Velas Hotel is an ALL INCLUSIVE resort, making your food and beverage at all the many bars, and restaurants throughout all three sections of the hotel...ALL INCLUDED! (exceptions apply)
+			</p>
+		</div>
+		<div class='right'>
+			<p><span class='bold'>Dates of Travel</span><br>
+			April 4-8, 2017<br><br><br>
+			<span class='bold'>Destination</span><br>
+			The Riviera Maya<br>
+			Quintana Roo, Mexico<br><br><br>
+			<span class='bold'>Host Hotel</span><br>
+			The Grand Velas<br> Rivera Maya</p><br>
+		</div>
+
+
+		<img style='width: 100%;' src="footer.png">
+	</div>
+
+	<script type="text/javascript">
+		$('#home').click(function(){
+			window.location ="#";
+		});
+		$('#flights').click(function(){
+			window.location ="flights.html";
+		});
+		$('#hotel').click(function(){
+			window.location ="hotel.html";
+		});
+		$('#activities').click(function(){
+			window.location ="excursions.html";
+		});
+		$('#itinerary').click(function(){
+			window.location ="itinerary.html";
+		});
+		var sheetKey = "AIzaSyAv3daCKFAHnRUmkUeymZW42RyBOVzfmyo";
+	</script>
+</body>
+<footer>
+	<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338</p>
+</footer>
+</html>
