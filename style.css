@@ -28,20 +28,24 @@ body > div:nth-child(2) > div.left > p {
 
 }
 .center {
-	width: 100%;
-    margin: 0 auto; 
-    padding: 10px 10px 10px 10px;
+/*	width: 100%;
+    margin: 0 auto; */
 }
-
+.menu {
+	height: 50px;
+}
+.item > p {
+	background-color: red;
+	height: 50px;
+}
 .active {
 	background-color: #cccccc;
-	padding: 10px;
 }
 
 .item:hover {
 	background-color: #cccccc;
 	cursor: default;
-	padding: 10px;
+	
 }
 .border {
 	border:    1px solid black;
@@ -61,7 +65,7 @@ body > div:nth-child(2) > div.left > p {
 }
 
 #statistics{
-	background: rgba(255,255,255, 1);
+	margin: 30px;
 	margin-left: auto ;
   	margin-right: auto ;
 
@@ -96,12 +100,12 @@ body > div:nth-child(2) > div.left > p {
 }
 .container {
 	background: rgba(255,255,255, 0.8);
+	border-radius: 25px;
 	margin-left: auto ;
   	margin-right: auto ;
-	width: 80%;
+	width: 90%;
 }
 .container-fluid{
-	background: rgba(255,255,255, 0.8);
 	margin-left: auto ;
   	margin-right: auto ;
 
@@ -133,27 +137,23 @@ body > div:nth-child(3) > div.left {
 body > div:nth-child(3) > div.right{
 	background-color: white;
 	border-radius: 25px 0  0 25px;
-
 	height:373px;
 }
 .right p {
 	padding: 20px
 }
-.popup{
-	background: rgba(255,255,255, 1);
-}
+
 
 table, td, th {    
     border: 1px solid #ddd;
     text-align: left;
-    padding:10px;
+    padding:20px;
 
 }
 #guest {
 	font-size: 32px;
 }
 footer {
-	background: rgba(255,255,255, 0.8);
 	padding:  10px 0 10px 0;
 	border-radius: 0 0 25px 25px;
 	width: 80%;

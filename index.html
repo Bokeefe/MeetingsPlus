@@ -15,38 +15,44 @@
 </head>
 <body>
 
-	<div class='container' style='border-radius:25px 25px 0 0;'>
+	<div class='container'>
 		<div class='container-head' >
 			<img src="mpe_logo.png">
 		</div>
-		<div class='menu'>
-			<div class='center'>
-				<span class='active' id='home'>HOME</span>
-				<span class='item' id='itinerary'>Itinerary</span>
-				<span class='item' id='flights'>Flights</span>
-				<span class='item' id='hotel'>Hotel</span>
-				<span class='item' id='activities'>Activities/Excursions</span>
-				<span class='item' id='attendee'>Attendee List</span>
-			</div>
-		</div>
-	</div>
 
 
-	<div class='container'>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <img style='height: 40px; display:none' src="mpe_logo.png">
+		    </div>
+		    <ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="itinerary.html">Itinerary</a></li>
+				<li><a href="flights.html">Flights</a></li>
+				<li><a href="hotel.html">Hotel</a></li>
+				<li><a href="excursions.html">Activities/Excursions</a></li>
+				<li><a href="attendee.html">Attendee List</a></li>
+		    </ul>
+		  </div>
+		</nav>
+
+
+
 		<div class="row" >
     		<div class="col-md-8" >
 				<h1 style="text-align: center;">Image Tech - A Xerox Company</h1>
 				<h3 style="text-align: center;"">2017 PRESIDENT’S CLUB MEETING</h3>
     		</div>
     		<div class="col-md-4" >
-				<img style='height:125px; ' id='logo' src='imagetech.png'>
+				<img style='height:125px; margin-left:25%;' id='logo' src='imagetechlogo.png'>
 			</div>  
     	</div>
-	</div>
 
-	<div class='container'>
+
+
 		<div class="row" >
-    		<div class="col-md-8" style='background-color: white; border-radius:0 25px 25px 0;'>
+    		<div class="col-md-8" id='congrats' style='background-color: white; border-radius:0 25px 25px 0; border: 1px solid black;'>
 				<img style= 'height:90px; margin-left: 40%;' src="winners.jpg">
 				<p>
 				Congratulations on being a 2017 Winner to the ITS President’s Club Event.  Now it is time to sit back and enjoy the benefits of all your hard work!<br><br>
@@ -57,8 +63,8 @@
 				</p>
     		</div>
     		<div class="col-md-1" ></div>
-    		<div class="col-md-3" style='background-color: white; border-radius:25px 0  0 25px;' >
-				<p style='padding: 10px;'><span class='bold'>Dates of Travel</span><br>
+    		<div class="col-md-3" id='facts' style='background-color: white; border-radius:25px 0  0 25px; border:1px solid black;' >
+				<p style='padding: 10px; font-size: 20px;'><span class='bold'>Dates of Travel</span><br>
 							April 4-8, 2017<br><br><br>
 							<span class='bold'>Destination</span><br>
 							The Riviera Maya<br>
@@ -93,6 +99,10 @@
 		$('#admin').click(function(){
 			window.location ="attendee.html";
 		});
+
+		var congrats = $('#congrats').height();
+		$('#facts').css('height',congrats)
+
 		var sheetKey = "AIzaSyAv3daCKFAHnRUmkUeymZW42RyBOVzfmyo";
 	</script>
 </body>
