@@ -17,16 +17,17 @@
 		<div class='menu'>
 			<div class="center">
 				<span class='item' id='home'>HOME</span>
+				<span class='item' id='itinerary'>Itinerary</span>
 				<span class='item' id='flights'>Flights</span>
 				<span class='item' id='hotel'>Hotel</span>
 				<span class='active' id='activities'>Activities/Excursions</span>
-				<span class='item' id='itinerary'>Itinerary</span>
+				<span class='item' id='attendee'>Attendee List</span>
 			</div>
 		</div>
 	</div>
 
 	<div style='margin-top: -21px;' class='container'>
-		<h1>Excursions/Activities</h1>
+		<h1>Activities/Excursions</h1>
 		<button class='button' id='confirm'>Confirm Your Details Here</button><br><br><br>
 		<div class='excursions'>
 
@@ -90,9 +91,12 @@ Sign up for a luxurious Spa Treatment as your optional activity!
 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7ELATBMyARwugIrwNNMDfoo6L5fjSWCQefoUD_R2NiZRkyg/viewform?embedded=true" width=100% height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 		</div>
 	<script type="text/javascript">
+		window.frames.alert = function() {};
+
 		$('#confirm').click(function(){
 			$('.container').hide();
 			$('.popup').show();
+
 		});
 
 		$('#submit').click(function(){
@@ -121,6 +125,10 @@ Sign up for a luxurious Spa Treatment as your optional activity!
 		$('#itinerary').click(function(){
 			window.location ="itinerary.html";
 		});
+		$('#attendee').click(function(){
+			window.location ="attendee.html";
+		});
+
 		var sheetKey = "AIzaSyAv3daCKFAHnRUmkUeymZW42RyBOVzfmyo";//private?
 		var sheetKey2 = "181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g"
 		var jsonFeed = "https://spreadsheets.google.com/feeds/list/"+sheetKey2+"/od6/public/values?alt=json";

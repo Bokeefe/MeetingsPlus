@@ -19,16 +19,17 @@
 		<div class='menu'>
 			<div class="center">
 				<span class='item' id='home'>HOME</span>
+				<span class='item' id='itinerary'>Itinerary</span>
 				<span class='item' id='flights'>Flights</span>
 				<span class='active' id='hotel'>Hotel</span>
 				<span class='item' id='activities'>Activities/Excursions</span>
-				<span class='item' id='itinerary'>Itinerary</span>
+				<span class='item' id='attendee'>Attendee List</span>
 			</div>
 		</div>
 	</div>
 
-	<div style='margin-top: -21px;' class='container'>
-		<h1> We can display whatever we want here but below is a live example that you can edit from the google spreadsheet tab for this page </h1>
+	<div style='' class='container'>
+
 
 		<table id="statistics" class="table table-condensed table-striped"></table>
 	</div>
@@ -70,7 +71,9 @@ $('#statistics').sheetrock({
 		$('#itinerary').click(function(){
 			window.location ="itinerary.html";
 		});
-
+		$('#attendee').click(function(){
+			window.location ="attendee.html";
+		});
 	</script>
 </body>
 <footer>

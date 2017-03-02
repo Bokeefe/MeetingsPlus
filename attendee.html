@@ -20,11 +20,11 @@
 		<div class='menu'>
 			<div class="center">
 				<span class='item' id='home'>HOME</span>
-				<span class='active' id='itinerary'>Itinerary</span>
+				<span class='item' id='itinerary'>Itinerary</span>
 				<span class='item' id='flights'>Flights</span>
 				<span class='item' id='hotel'>Hotel</span>
 				<span class='item' id='activities'>Activities/Excursions</span>
-				<span class='item' id='attendee'>Attendee List</span>
+				<span class='active' id='attendee'>Attendee List</span>
 			</div>
 		</div>
 	</div>
@@ -34,13 +34,12 @@
 	</div>
 	<script type="text/javascript">
 
-var easy = "https://docs.google.com/spreadsheets/d/181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g/edit#gid=1831073074";
+var link = "https://docs.google.com/spreadsheets/d/181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g/edit#gid=1974570245";
 
 $('#statistics').sheetrock({
-  url: easy
+  url: link
 
 });
-
 
 		$('#home').click(function(){
 			window.location ="index.html";
@@ -58,8 +57,9 @@ $('#statistics').sheetrock({
 			window.location ="itinerary.html";
 		});
 		$('#attendee').click(function(){
-			window.location ="attendee.html";
+			window.location ="#";
 		});
+
 	</script>
 </body>
 <footer>

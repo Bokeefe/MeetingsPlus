@@ -22,7 +22,7 @@ body > div:nth-child(2) > div.left > p {
 
 }
 .center {
-	width: 50%;
+	width: 100%;
     margin: 0 auto; 
     padding: 10px 10px 10px 10px;
 }
@@ -60,6 +60,7 @@ body > div:nth-child(2) > div.left > p {
 	background: rgba(255,255,255, 1);
 	margin-left: auto ;
   	margin-right: auto ;
+
 }
 .excursions {
 	border: 1px solid black;
@@ -97,6 +98,12 @@ body > div:nth-child(2) > div.left > p {
 	margin-left: auto ;
   	margin-right: auto ;
 	width: 80%;
+}
+.container-fluid{
+	background: rgba(255,255,255, 0.8);
+	margin-left: auto ;
+  	margin-right: auto ;
+
 }
 .left{
 	float:left;
@@ -138,7 +145,8 @@ body > div:nth-child(3) > div.right{
 table, td, th {    
     border: 1px solid #ddd;
     text-align: left;
-    padding:20px;
+    padding:10px;
+
 }
 #guest {
 	font-size: 32px;
