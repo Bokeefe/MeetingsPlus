@@ -23,10 +23,17 @@ span.bold{
 body > div:nth-child(2) > div.left > p {
 	font-size: 28px;
 }
-.menu {
-	background-color: white;
-
+#menu {
+     margin: 0 auto;
+     width: 700px;
 }
+#logo{
+	height:125px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
 .center {
 /*	width: 100%;
     margin: 0 auto; */
@@ -65,23 +72,23 @@ body > div:nth-child(2) > div.left > p {
 }
 
 #statistics{
-	margin: 30px;
+	margin: 50px;
 	margin-left: auto ;
   	margin-right: auto ;
 
 }
-.excursions {
+#excursions {
 	border: 1px solid black;
 	background-color: white;
 	overflow: auto;
 	margin-top: 15px;
 }
-.excursions > p {
+#excursions > p {
 	width: 65%;
 	float:left;
 	padding:20px;
 }
-.excursions > img {
+#excursions > img {
 	height:275px;
 	overflow:hidden;
 }
@@ -99,11 +106,12 @@ body > div:nth-child(2) > div.left > p {
     text-align: center;
 }
 .container {
-	background: rgba(255,255,255, 0.8);
+	background: rgba(255,255,255, 0.5);
 	border-radius: 25px;
+	margin-top: 20px;
 	margin-left: auto ;
   	margin-right: auto ;
-	width: 90%;
+  	height:100%;
 }
 .container-fluid{
 	margin-left: auto ;
@@ -134,6 +142,15 @@ body > div:nth-child(3) > div.left {
 .left p {
 	padding: 0 30px 0 30px;
 }
+#sample > img{
+	height:250px;
+}
+@media screen and (max-width: 1000px) {
+#sample > img{
+	width: 50%;
+	height: 50%;
+}
+}
 body > div:nth-child(3) > div.right{
 	background-color: white;
 	border-radius: 25px 0  0 25px;
@@ -145,9 +162,7 @@ body > div:nth-child(3) > div.right{
 
 
 table, td, th {    
-    border: 1px solid #ddd;
-    text-align: left;
-    padding:20px;
+
 
 }
 #guest {

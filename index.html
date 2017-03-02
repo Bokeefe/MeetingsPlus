@@ -20,9 +20,8 @@
 			<img src="mpe_logo.png">
 		</div>
 
-
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+		<nav class="navbar navbar-default" style="background-color: white;">
+		  <div class="container-fluid" id='menu'>
 		    <div class="navbar-header">
 		      <img style='height: 40px; display:none' src="mpe_logo.png">
 		    </div>
@@ -37,22 +36,18 @@
 		  </div>
 		</nav>
 
-
-
 		<div class="row" >
     		<div class="col-md-8" >
 				<h1 style="text-align: center;">Image Tech - A Xerox Company</h1>
 				<h3 style="text-align: center;"">2017 PRESIDENT’S CLUB MEETING</h3>
     		</div>
     		<div class="col-md-4" >
-				<img style='height:125px; margin-left:25%;' id='logo' src='imagetechlogo.png'>
+				<img id='logo'  src='imagetechlogo.png'>
 			</div>  
     	</div>
 
-
-
 		<div class="row" >
-    		<div class="col-md-8" id='congrats' style='background-color: white; border-radius:0 25px 25px 0; border: 1px solid black;'>
+    		<div class="col-md-8" id='congrats' style='background-color: white; border-radius:0 25px 25px 0;'>
 				<img style= 'height:90px; margin-left: 40%;' src="winners.jpg">
 				<p>
 				Congratulations on being a 2017 Winner to the ITS President’s Club Event.  Now it is time to sit back and enjoy the benefits of all your hard work!<br><br>
@@ -63,21 +58,28 @@
 				</p>
     		</div>
     		<div class="col-md-1" ></div>
-    		<div class="col-md-3" id='facts' style='background-color: white; border-radius:25px 0  0 25px; border:1px solid black;' >
+    		<div class="col-md-3" id='facts' style='background-color: white; border-radius:25px 0  0 25px;' >
 				<p style='padding: 10px; font-size: 20px;'><span class='bold'>Dates of Travel</span><br>
 							April 4-8, 2017<br><br><br>
 							<span class='bold'>Destination</span><br>
 							The Riviera Maya<br>
 							Quintana Roo, Mexico<br><br><br>
 							<span class='bold'>Host Hotel</span><br>
-							The Grand Velas<br> Rivera Maya</p><br>
+							The Grand Velas<br> Riviera Maya</p><br>
 			</div>  
  
-			<img style='width: 100%;margin-top: 20px;' src="footer.png">
+			<img style='width: 100%; margin-top: 18px;' src="footer.png">
+		</div>
+		<div class="footsie" style='font-size:16px; padding: 20px'>
+			<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338 <span class='item' style='color: grey' id='admin'> ADMIN</span></p>
 		</div>
 	</div>
 
 	<script type="text/javascript">
+		console.log("what is hup?");
+
+
+		
 		$('#home').click(function(){
 			window.location ="#";
 		});
@@ -96,8 +98,17 @@
 		$('#attendee').click(function(){
 			window.location ="attendee.html";
 		});
+
+		var link = "https://docs.google.com/spreadsheets/d/181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g/edit#gid=1701187580";
+		
 		$('#admin').click(function(){
-			window.location ="attendee.html";
+			var admincode = "Plannerchick1";
+			var answer = prompt("Please ender Admin Code:");
+			if(answer != admincode){
+				alert("Wrong Admin Code.");
+			} else {
+				window.location = link;
+			}
 		});
 
 		var congrats = $('#congrats').height();
@@ -106,7 +117,7 @@
 		var sheetKey = "AIzaSyAv3daCKFAHnRUmkUeymZW42RyBOVzfmyo";
 	</script>
 </body>
-<footer style='border-radius: 0 0 25px 25px;' class='container'>
-	<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338<span class='item' style='color: grey' id='admin'>ADMIN</span></p>
+<footer>
+
 </footer>
 </html>

@@ -20,8 +20,8 @@
 		<div class='container-head' >
 			<img src="mpe_logo.png">
 		</div>
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
+		<nav class="navbar navbar-default" style="background-color: white;">
+		  <div class="container-fluid" id='menu'>
 		    <div class="navbar-header">
 		      <img style='height: 40px; display:none' src="mpe_logo.png">
 		    </div>
@@ -37,16 +37,20 @@
 		</nav>
 
 
-	<div style='margin-top: -21px; margin-bottom: -16px;'>
-		<h1 style='padding:30px 0 0 30px;'> Jet Blue Airlines</h1><br>
-		<div>
-		<p style='padding: 30px; background-color: white; border-radius: 25px;'>Depart Boston on Tuesday, April 4, 2017 on Flight 171 at 11:50 am and arriving non-stop into Cancun at 3:29 pm.
-		<br><br><br><br>
-		Depart Cancun on Saturday, April 8, 2017 on flight 172at 4:25 pm and arriving non-stop into Boston at 9:29 pm.
-		<br><br><br><br>
-		Cancun is on the EST zone so no need to reset your watches! </p>
+		<div style='margin-top: -21px; margin-bottom: -16px;'>
+			<h1 style='padding:30px 0 0 30px;'> Jet Blue Airlines</h1><br>
+			<div>
+			<p style='padding: 30px; background-color: white; border-radius: 25px;'>Depart Boston on Tuesday, April 4, 2017 on Flight 171 at 11:50 am and arriving non-stop into Cancun at 3:29 pm.
+			<br><br><br><br>
+			Depart Cancun on Saturday, April 8, 2017 on flight 172at 4:25 pm and arriving non-stop into Boston at 9:29 pm.
+			<br><br><br><br>
+			Cancun is on the EST zone so no need to reset your watches! </p>
+		</div>
+		<img style='width: 100%' src="http://airchive.com/blog/wp-content/uploads/2013/08/A321_JETBLUE_AIRWAYS-1.jpg">
+		<div class="footsie" style='font-size:16px; padding: 20px'>
+			<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338 <span class='item' style='color: grey' id='admin'> ADMIN</span></p>
+		</div>
 	</div>
-
 	<script type="text/javascript">
 
 
@@ -69,9 +73,21 @@
 		$('#attendee').click(function(){
 			window.location ="attendee.html";
 		});
+
+		var link = "https://docs.google.com/spreadsheets/d/181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g/edit#gid=1701187580";
+		
+		$('#admin').click(function(){
+			var admincode = "Plannerchick1";
+			var answer = prompt("Please ender Admin Code:");
+			if(answer != admincode){
+				alert("Wrong Admin Code.");
+			} else {
+				window.location = link;
+			}
+		});
+
 	</script>
 </body>
 <footer>
-	<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338</p>
 </footer>
 </html>
