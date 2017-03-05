@@ -6,35 +6,44 @@
 	<script
   src="http://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-	
+  crossorigin="anonymous"></script>  
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 	<div class='container'>
 		<div class='container-head' >
-			<img src="mpe_logo.png">
+			<img id='meetingslogo' src="mpe_logo.png">
 		</div>
 
-		<nav class="navbar navbar-default" style="background-color: white;">
-		  <div class="container-fluid" id='menu'>
-		    <div class="navbar-header">
-		      <img style='height: 40px; display:none' src="mpe_logo.png">
-		    </div>
-		    <ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
+<nav class="navbar navbar-default" style="background-color: white;">
+	<div class="container-fluid" id='menu'>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<img id='menulogo' src="mpe_logo.png">
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">HOME</a></li>
 				<li><a href="itinerary.html">Itinerary</a></li>
 				<li><a href="flights.html">Flights</a></li>
 				<li><a href="hotel.html">Hotel</a></li>
 				<li><a href="excursions.html">Activities/Excursions</a></li>
 				<li><a href="attendee.html">Attendee List</a></li>
-		    </ul>
-		  </div>
-		</nav>
+			</ul>
+		</div>
+	</div>
+</nav>
 
 		<div class="row" >
     		<div class="col-md-8" >
@@ -47,8 +56,9 @@
     	</div>
 
 		<div class="row" >
-    		<div class="col-md-8" id='congrats' style='background-color: white; border-radius:0 25px 25px 0;'>
-				<img style= 'height:90px; margin-left: 40%;' src="winners.jpg">
+    		<div class="col-md-8" id='congrats' style='background-color: white; border-radius:0 25px 25px 0; position: relative;'>
+    			<p style="text-align: center;"><img style= 'height:80px;' src="winners.jpg"></p>
+				
 				<p>
 				Congratulations on being a 2017 Winner to the ITS President’s Club Event.  Now it is time to sit back and enjoy the benefits of all your hard work!<br><br>
 
@@ -76,10 +86,7 @@
 	</div>
 
 	<script type="text/javascript">
-		console.log("what is hup?");
 
-
-		
 		$('#home').click(function(){
 			window.location ="#";
 		});
@@ -110,9 +117,16 @@
 				window.location = link;
 			}
 		});
+		
+		if ($(window).width() > 1000) {
+				var congrats = $('#congrats').height();
+				$('#facts').css('height',congrats);
+		}
+		if ($(window).width() < 769) {
+				$('#meetingslogo').hide();
+				$('#menulogo').show();
+		}
 
-		var congrats = $('#congrats').height();
-		$('#facts').css('height',congrats)
 
 		var sheetKey = "AIzaSyAv3daCKFAHnRUmkUeymZW42RyBOVzfmyo";
 	</script>

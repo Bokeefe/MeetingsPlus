@@ -12,31 +12,45 @@
 	<meta name="google-signin-client_id" content="657483998142-c25qf51fp8d9aqcl9oipni9cbhqr3fmc.apps.googleusercontent.com.apps.googleusercontent.com">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class='container'>
 		<div class='container-head' >
-			<img src="mpe_logo.png">
+			<img id='meetingslogo' src="mpe_logo.png">
 		</div>
 		<nav class="navbar navbar-default" style="background-color: white;">
-		  <div class="container-fluid" id='menu'>
+		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <img style='height: 40px; display:none' src="mpe_logo.png">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		    	<img id='menulogo' src="mpe_logo.png">
 		    </div>
-		    <ul class="nav navbar-nav">
-				<li ><a href="index.html">Home</a></li>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+				<li><a href="index.html">HOME</a></li>
 				<li class="active"><a href="#">Itinerary</a></li>
 				<li><a href="flights.html">Flights</a></li>
 				<li><a href="hotel.html">Hotel</a></li>
 				<li><a href="excursions.html">Activities/Excursions</a></li>
 				<li><a href="attendee.html">Attendee List</a></li>
 		    </ul>
+		    </div>
 		  </div>
 		</nav>
 
+		<div class="row" >
+    		<div class="col-md-12">
+				<iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;height=600&amp;wkst=2&amp;bgcolor=%23ccccff&amp;src=v7pfge4392up5mo7k30ajr52r4%40group.calendar.google.com&amp;color=%23ccccff&amp;ctz=America%2FCancun&amp;mode=WEEK&amp;dates=20170404%2F20170408" style="border-width:0; margin-left:5%;"  width="90%" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
 		<div class="row" >
     		<div class="col-md-12" >
 				<table  id="statistics" class="table table-condensed table-striped"></table>
@@ -48,12 +62,8 @@
 	</div>
 	<script type="text/javascript">
 
-var link = "https://docs.google.com/spreadsheets/d/181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g/edit#gid=1831073074";
+var link = "https://calendar.google.com/calendar/render?cid=v7pfge4392up5mo7k30ajr52r4%40group.calendar.google.com#main_7%7Cweek-2+24194+24200+24199";
 
-$('#statistics').sheetrock({
-  url: link
-
-});
 
 
 		$('#home').click(function(){
@@ -75,7 +85,6 @@ $('#statistics').sheetrock({
 			window.location ="attendee.html";
 		});
 
-		var link = "https://docs.google.com/spreadsheets/d/181mvJI_S8t4Yyw8ziApMM8DKhWwF0d68WTB9Obz6t0g/edit#gid=1701187580";
 		
 		$('#admin').click(function(){
 			var admincode = "Plannerchick1";
@@ -86,6 +95,11 @@ $('#statistics').sheetrock({
 				window.location = link;
 			}
 		});
+				if ($(window).width() < 769) {
+				$('#meetingslogo').hide();
+				$('#menulogo').show();
+		}
+
 	</script>
 </body>
 <footer>

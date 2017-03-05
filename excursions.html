@@ -7,37 +7,46 @@
   src="http://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class='container'>
 	<div class='container-head' >
-		<img src="mpe_logo.png">
+		<img id='meetingslogo' src="mpe_logo.png">
 	</div>
 	<nav class="navbar navbar-default" style="background-color: white;">
-	  <div class="container-fluid" id='menu'>
+	  <div class="container-fluid">
 	    <div class="navbar-header">
-	      <img style='height: 40px; display:none' src="mpe_logo.png">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	    	<img id='menulogo' src="mpe_logo.png">
 	    </div>
-	    <ul class="nav navbar-nav">
-			<li ><a href="index.html">Home</a></li>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+			<li><a href="index.html">HOME</a></li>
 			<li><a href="itinerary.html">Itinerary</a></li>
 			<li><a href="flights.html">Flights</a></li>
 			<li><a href="hotel.html">Hotel</a></li>
 			<li class="active"><a href="#">Activities/Excursions</a></li>
 			<li><a href="attendee.html">Attendee List</a></li>
 	    </ul>
+	    </div>
 	  </div>
 	</nav>
+	
 
 <div id='biggie' style='display:show; border-radius:0;"'>
 	<div style='margin-top: -21px;'>
-		<h1>Activities/Excursions</h1>
-		<button class='button' id='confirm'>Confirm Your Details Here</button><br><br><br>
+		<button class='button' id='confirm' style='font-style: italic;'>CHOOSE YOUR ACTIVITY/EXCURSION HERE</button><br><br><br>
 		<div class="row" id='excursions'>
 			<div class="col-md-8" id='words'>
 				<p><span style='font-weight: 900; font-size:2em;'> TULUM Historical Tour </span><br>
@@ -145,6 +154,10 @@
 				window.location = link;
 			}
 		});
+		if ($(window).width() < 769) {
+			$('#meetingslogo').hide();
+			$('#menulogo').show();
+		}
 
 
 	</script>

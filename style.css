@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	background-image: url("http://static.superiorwallpapers.com/images/lthumbs/2016-06/11848_Beautiful-fishes-in-the-crystal-ocean-water.jpg");
+	background-image: url("background.jpg");
 	background-color: lightblue;
     background-attachment: fixed;
     background-position: center;
@@ -16,6 +16,8 @@ p, div {
     font-family: 'Raleway';
 }
 
+
+
 span.bold{
 	font-weight: 900;
 	text-decoration: underline;
@@ -23,9 +25,22 @@ span.bold{
 body > div:nth-child(2) > div.left > p {
 	font-size: 28px;
 }
-#menu {
-     margin: 0 auto;
-     width: 700px;
+#menulogo{
+	height: 40px;
+	display:none;
+}
+
+#myNavbar > ul {
+	width: 575px;
+	margin-left: 18%;
+
+  }
+@media screen and (max-width: 1000px) {
+#myNavbar > ul {
+	width: 575px;
+	margin-left: 5%;
+
+  }
 }
 #logo{
 	height:125px;
@@ -34,9 +49,9 @@ body > div:nth-child(2) > div.left > p {
     margin-right: auto 
 }
 
-.center {
-/*	width: 100%;
-    margin: 0 auto; */
+#center {
+	width: 100%;
+    margin: 0 auto; 
 }
 .menu {
 	height: 50px;
@@ -46,7 +61,8 @@ body > div:nth-child(2) > div.left > p {
 	height: 50px;
 }
 .active {
-	background-color: #cccccc;
+ 	background-color: #cccccc;
+	width: auto;
 }
 
 .item:hover {
@@ -76,6 +92,20 @@ body > div:nth-child(2) > div.left > p {
 	margin-left: auto ;
   	margin-right: auto ;
 
+}
+#statistics > tbody > tr:nth-child(1){
+	font-size: 24px;
+	font-weight: 900;
+
+}
+
+@media screen and (max-width: 1000px) {
+#statistics{
+	width: 100;
+}
+#menu{
+	width: 100%;
+}
 }
 #excursions {
 	border: 1px solid black;
@@ -113,11 +143,7 @@ body > div:nth-child(2) > div.left > p {
   	margin-right: auto ;
   	height:100%;
 }
-.container-fluid{
-	margin-left: auto ;
-  	margin-right: auto ;
 
-}
 .left{
 	float:left;
 
@@ -145,11 +171,33 @@ body > div:nth-child(3) > div.left {
 #sample > img{
 	height:250px;
 }
+
 @media screen and (max-width: 1000px) {
-#sample > img{
+	#sample > img{
+		width: 50%;
+		height: 50%;
+		float:right;
+	}
+#words {
+	float:left;
 	width: 50%;
-	height: 50%;
 }
+}
+@media screen and (max-width: 425px) {
+	#sample > img{
+		width: 100%;
+		height: 50%;
+		float:right;
+	}
+	#words {
+	float:left;
+	width: 100%;
+	}
+}
+
+body > div > nav {
+		margin-top: 20px;
+	}
 }
 body > div:nth-child(3) > div.right{
 	background-color: white;
@@ -161,10 +209,7 @@ body > div:nth-child(3) > div.right{
 }
 
 
-table, td, th {    
 
-
-}
 #guest {
 	font-size: 32px;
 }

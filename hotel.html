@@ -9,43 +9,70 @@
   crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
   	<script src="https://apis.google.com/js/platform.js" async defer></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta name="google-signin-client_id" content="657483998142-c25qf51fp8d9aqcl9oipni9cbhqr3fmc.apps.googleusercontent.com.apps.googleusercontent.com">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<div class='container' >
 		<div class='container-head' >
-			<img src="mpe_logo.png">
+			<img id='meetingslogo' src="mpe_logo.png">
 		</div>
 		<nav class="navbar navbar-default" style="background-color: white;">
-		  <div class="container-fluid" id='menu'>
+		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <img style='height: 40px; display:none' src="mpe_logo.png">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		    	<img id='menulogo' src="mpe_logo.png">
 		    </div>
-		    <ul class="nav navbar-nav">
-				<li ><a href="index.html">Home</a></li>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+				<li><a href="index.html">HOME</a></li>
 				<li><a href="itinerary.html">Itinerary</a></li>
-				<li class="active"><a href="#">Flights</a></li>
-				<li><a href="hotel.html">Hotel</a></li>
+				<li><a href="flights.html">Flights</a></li>
+				<li class="active"><a href="#">Hotel</a></li>
 				<li><a href="excursions.html">Activities/Excursions</a></li>
 				<li><a href="attendee.html">Attendee List</a></li>
 		    </ul>
+		    </div>
 		  </div>
 		</nav>
-				<h3>Grande Velas | Riviera Maya</h3>
-				<h6>A Luxurious, All Inclusive Mexico Riviera Maya Hotel </h6>
-		<div class="row" style='background-color: white; border-radius: 25px; '>
+		<div class="row" style='width: 90%; margin-left:5%;' >
+    		<div class="col-sm-6" >
+				<h2>Grande Velas <br> Riviera Maya</h2>
+    		</div>
+    		<div class="col-sm-6" >
+    			<div class="container-fluid"><br>
+					<div class="row" >
+						<a href="mailto:reservationsrm@velasresorts.com" style="font-size: 20px; float:right;">Email</a>
+					</div>
+					 <div class="row" >
+						<a href="http://rivieramaya.grandvelas.com/" style="font-size: 20px; float:right;">Website</a>
+					</div>
+    				<div class="row" >
+						<p style="font-size: 20px; float:right;">1-877-418-2963</p>
+					</div>
+				</div>
+			</div>  
+    	</div>
+
+		<div class="row" style='background-color: white; border-radius: 25px; margin-left: 5%; width: 90%;'>
 			<div style='padding: 25px;'>
 
 				<p>Escape to acres of white sand beach, mangroves and the Mayan jungle of the Caribbean Coast. Grand Velas Riviera Maya is a true luxury all-inclusive resort  and the Yucatan's most spectacular vacation destination among all the other Rivera Maya resorts. Relax on our pristine beach and play in the turquoise Caribbean Sea. Awaken your spirit with ancient healing rituals at our spa, a jungle sanctuary in harmony with nature. Savor the flavors of Mexico and the world at restaurants serving creative cuisine and chef-inspired food for the soul.</p>
 			</div>
+			<img style='width: 100%; border-radius: 0 0 25px 25px;' src="hotel.jpg">
 		</div>
 
 
-		<img style='height:300px;' src="http://rivieramaya.grandvelas.com/resourcefiles/mainimages/grand-velas-riviera-maya-mexico-reviews-top.jpg">
+		
 		<div class="footsie" style='font-size:16px; padding: 20px'>
 			<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338 <span class='item' style='color: grey' id='admin'> ADMIN</span></p>
 		</div>
@@ -84,6 +111,10 @@
 				window.location = link;
 			}
 		});
+		if ($(window).width() < 769) {
+			$('#meetingslogo').hide();
+			$('#menulogo').show();
+		}
 
 	</script>
 </body>

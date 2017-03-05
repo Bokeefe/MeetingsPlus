@@ -7,6 +7,7 @@
   src="http://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
   	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<meta name="google-signin-client_id" content="657483998142-c25qf51fp8d9aqcl9oipni9cbhqr3fmc.apps.googleusercontent.com.apps.googleusercontent.com">
@@ -14,39 +15,59 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<div class='container' >
 		<div class='container-head' >
-			<img src="mpe_logo.png">
+			<img id='meetingslogo' src="mpe_logo.png">
 		</div>
 		<nav class="navbar navbar-default" style="background-color: white;">
-		  <div class="container-fluid" id='menu'>
+		  <div class="container-fluid">
 		    <div class="navbar-header">
-		      <img style='height: 40px; display:none' src="mpe_logo.png">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+		    	<img id='menulogo' src="mpe_logo.png">
 		    </div>
-		    <ul class="nav navbar-nav">
-				<li ><a href="index.html">Home</a></li>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+				<li><a href="index.html">HOME</a></li>
 				<li><a href="itinerary.html">Itinerary</a></li>
 				<li class="active"><a href="#">Flights</a></li>
 				<li><a href="hotel.html">Hotel</a></li>
 				<li><a href="excursions.html">Activities/Excursions</a></li>
 				<li><a href="attendee.html">Attendee List</a></li>
 		    </ul>
+		    </div>
 		  </div>
 		</nav>
 
 
-		<div style='margin-top: -21px; margin-bottom: -16px;'>
+		<div style='font-size: 18px'>
 			<h1 style='padding:30px 0 0 30px;'> Jet Blue Airlines</h1><br>
-			<div>
-			<p style='padding: 30px; background-color: white; border-radius: 25px;'>Depart Boston on Tuesday, April 4, 2017 on Flight 171 at 11:50 am and arriving non-stop into Cancun at 3:29 pm.
-			<br><br><br><br>
-			Depart Cancun on Saturday, April 8, 2017 on flight 172at 4:25 pm and arriving non-stop into Boston at 9:29 pm.
-			<br><br><br><br>
-			Cancun is on the EST zone so no need to reset your watches! </p>
+			<div style="background-color: white; border-radius: 25px; margin-left:5%; width: 90%;">
+			<p style='padding: 30px; float:left''>
+				<b style="text-decoration: underline;">Tuesday, April 4, 2017</b><br>
+				Flight # 171<br>
+				Depart Boston at 11:50 am<br>
+				Non-Stop to Cancun<br>
+				Arrival at 3:29 pm<br>
+			</p>
+
+			<p style='padding: 30px; float:right;''>
+				<b style="text-decoration: underline;">Saturday, April 8, 2017</b><br>
+				Flight # 172<br>
+				Depart Cancun at 4:25 pm<br>
+				Non-Stop to Boston<br>
+				Arrival at 9:29 pm<br>
+			</p>
+			<p style='padding: 30px; float:left;''>Cancun is on the EST zone so no need to reset your watches! </p>
+			<img style='width: 100%; border-radius: 0 0 25px 25px;' src="http://airchive.com/blog/wp-content/uploads/2013/08/A321_JETBLUE_AIRWAYS-1.jpg">
 		</div>
-		<img style='width: 100%' src="http://airchive.com/blog/wp-content/uploads/2013/08/A321_JETBLUE_AIRWAYS-1.jpg">
+		
 		<div class="footsie" style='font-size:16px; padding: 20px'>
 			<p style="text-align: center">Contact: Lynne McNamara  |  Lynne@MeetingsPlusEvents.com     |     401-783-6338 <span class='item' style='color: grey' id='admin'> ADMIN</span></p>
 		</div>
@@ -85,6 +106,12 @@
 				window.location = link;
 			}
 		});
+
+		if ($(window).width() < 769) {
+			$('#meetingslogo').hide();
+			$('#menulogo').show();
+		}
+
 
 	</script>
 </body>
