@@ -25,8 +25,17 @@ a {
 
 
 
-
-
+body > div > div:nth-child(3) > div.col-md-8 > h1 {
+	text-align: center;
+}
+body > div > div:nth-child(3) > div.col-md-8 > h3 {
+	text-align: center;
+}
+#congrats{
+	background-color: white;
+	border-radius:0 25px 25px 0;
+	position: relative;
+}
 
 #facts > p > span {
 	font-weight: 500;
