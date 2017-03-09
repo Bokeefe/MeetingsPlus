@@ -36,6 +36,30 @@ body > div > div:nth-child(3) > div.col-md-8 > h3 {
 	border-radius:0 25px 25px 0;
 	position: relative;
 }
+#congrats > p:nth-child(1) {
+	text-align: center;
+}
+
+#congrats > p:nth-child(1) > img {
+	height: 80px;
+}
+#facts {
+	background-color: white;
+	 border-radius:25px 0  0 25px;
+}
+#facts > p {
+	padding: 10px;
+	font-size: 20px;
+}
+body > div > div:nth-child(4) > img {
+	width: 100%;
+	margin-top: 18px;
+}
+
+
+#admin {
+
+}
 
 #facts > p > span {
 	font-weight: 500;
@@ -84,6 +108,36 @@ body > div > div:nth-child(3) > div.col-md-8 > h3 {
 	cursor: default;
 	
 }
+
+
+
+
+#hotel {
+	width: 90%;
+	margin-left:5%;
+}
+#hotel > div:nth-child(2) > div > div:nth-child(2) > a {
+	font-size: 20px;
+	float:right;
+}
+#hotel > div:nth-child(2) > div > div:nth-child(3) > p {
+	font-size: 20px;
+	float:right;
+}
+
+#hotel2 {
+	background-color: white;
+	border-radius: 25px; 
+	margin-left: 5%; width: 90%;
+}
+#hotel2 > div {
+	padding: 25px;
+}
+#hotel2 > img {
+	width: 100%; border-radius: 0 0 25px 25px;
+}
+
+
 
 
 
@@ -152,7 +206,68 @@ body > div > div:nth-child(3) > div.col-md-8 > h3 {
 	font-size:2em;
 
 }
+#biggie {
+	display:show;
+	border-radius:0;
+}
+#confirm {
+	font-style: italic;
+}
+#words > p > span:nth-child(9) {
+	color:red;
+	float:right;
+}
+#words > p > span:nth-child(7){
+	color:red;
+	float:right;
+}
+#words > p > span:nth-child(8){
+	color:red;
+	float:right;
+}
+#words > p > span:nth-child(9){
+	color:red;
+	float:right;
+}
+#popup {
+	display:none;
+	border-radius:0;
+}
+#flight{
+	font-size: 18px
+}
+#flight > h1 {
+	padding:30px 0 0 30px;
+}
+#flight > div:nth-child(3){
+	background-color: white;
+	border-radius: 25px;
+	margin-left:5%;
+	width: 90%;
+}
+#flight > div:nth-child(3) > p:nth-child(1) {
+	padding: 30px;
+	float:left
+}
+#flight > div:nth-child(3) > p:nth-child(2) > b {
+	text-decoration: underline;
+}
+#flight > div:nth-child(3) > p:nth-child(2) {
+	padding: 30px;
+	float:right;
+}
+#flight > div:nth-child(3) > p:nth-child(1) > b {
+	text-decoration: underline;
+}
+#flight > div:nth-child(3) > p:nth-child(3) {
+	padding: 30px;
+	float:left;
+}
 
+#flight > div:nth-child(3) > img {
+	width: 100%;
+	border-radius: 0 0 25px 25px;
+}
 
 .container-head {
 	margin-left: auto ;
@@ -175,7 +290,6 @@ body > div > div:nth-child(3) > div.col-md-8 > h3 {
   	margin-right: auto ;
   	height:100%;
 }
-
 
 #sample > img{
 	height:250px;
@@ -222,4 +336,11 @@ footer {
 }
 footer > p {
 	padding:10px;
+}
+.footsie {
+	font-size:16px;
+	padding: 20px
+}
+.footsie > p {
+	text-align: center;
 }
